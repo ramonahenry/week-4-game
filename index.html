@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Crystal Game </title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets\css\style.css">
+  
+
+</head>
+<body>
+<div class="container">
+  <header>
+  <div class="crystal-title">
+  <h2> Crystals Collector!</h2>
+  </div>
+  </header>
+
+    <div class="instructions">
+
+    <p>You will be given a random number at the start of the game.</p>
+    <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+    <p>You win the game by matching your total score to the random number. You lose the game if your total score goes above the random number.</p>
+    <p>The value of each crystal is hidden from you until you click on it.</p>
+    <p>Each time the game starts the game will change the value of the crystals.</p>
+    </div>
+ </div> 
+
+ <div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <div id="guess-box">
+      <h1><p id="number-to-guess"></p></h1>
+      </div>
+    </div>
+    
+    <div class="col-sm-4">
+      <div id="win-box">
+        <h4>wins: <a id="wins"></a></h4>
+        <h4>losses: <a id="losses"></a></h4>
+      </div>
+    </div>
+</div>
+  </div>
+
+  <!--animated images -->
+  <div class="container">
+    <div id="crystals">
+    </div>
+  </div>
+
+  <!--score information -->
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <h3>Your total score is: </h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4 score-box" >
+      <h3><span id="total-score"></span></h3>
+    </div>
+  </div>  
+</div>
+
+  
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+  <script src="assets/javascript/game.js"></script>
+
+</body>
+</html>
